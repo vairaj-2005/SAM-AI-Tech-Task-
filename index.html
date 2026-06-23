@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAM AI Internship Registration</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2,#ff6b6b);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    background:rgba(255,255,255,0.95);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+}
+
+.header{
+    background:linear-gradient(90deg,#0066ff,#00c6ff);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.header h1{
+    font-size:38px;
+}
+
+.header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.form-section{
+    padding:35px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.full{
+    grid-column:1/3;
+}
+
+label{
+    font-weight:600;
+    margin-bottom:6px;
+    color:#333;
+}
+
+input,select,textarea{
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#0066ff;
+}
+
+textarea{
+    resize:none;
+}
+
+.btn{
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#ff416c,#ff4b2b);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.footer{
+    text-align:center;
+    padding:15px;
+    background:#f5f5f5;
+    color:#666;
+}
+
+@media(max-width:768px){
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .full{
+        grid-column:auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🚀 SAM AI Internship Program 2026</h1>
+        <p>Empowering Future Innovators in AI, Cloud & Technology</p>
+    </div>
+
+    <div class="form-section">
+
+        <form>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" placeholder="Enter mobile number">
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-group">
+                    <label>College / University</label>
+                    <input type="text" placeholder="College Name">
+                </div>
+
+                <div class="form-group">
+                    <label>Degree</label>
+                    <input type="text" placeholder="B.Tech / BCA / MCA">
+                </div>
+
+                <div class="form-group">
+                    <label>Branch</label>
+                    <input type="text" placeholder="Computer Engineering">
+                </div>
+
+                <div class="form-group">
+                    <label>Internship Domain</label>
+                    <select>
+                        <option>Select Domain</option>
+                        <option>Artificial Intelligence</option>
+                        <option>Machine Learning</option>
+                        <option>Cloud Computing</option>
+                        <option>Cyber Security</option>
+                        <option>Networking</option>
+                        <option>Web Development</option>
+                    </select>
+                </div>
+
+                <div class="form-group full">
+                    <label>Skills</label>
+                    <textarea rows="3" placeholder="Python, AWS, CCNA, Networking..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Resume</label>
+                    <input type="file">
+                </div>
+
+                <div class="form-group">
+                    <label>GitHub Profile</label>
+                    <input type="url" placeholder="GitHub URL">
+                </div>
+
+                <div class="form-group full">
+                    <label>Why do you want to join SAM AI?</label>
+                    <textarea rows="4" placeholder="Write your motivation..."></textarea>
+                </div>
+
+            </div>
+
+            <button class="btn">✨ Register Now</button>
+
+        </form>
+
+    </div>
+
+    <div class="footer">
+        © 2026 SAM AI | Internship Registration Portal
+    </div>
+
+</div>
+
+</body>
+</html>
